@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>X i O</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>X i O</h1>
+    <div id="board">
+        <div class="cell" onclick="play(this, 0)"></div>
+        <div class="cell" onclick="play(this, 1)"></div>
+        <div class="cell" onclick="play(this, 2)"></div>
+        <div class="cell" onclick="play(this, 3)"></div>
+        <div class="cell" onclick="play(this, 4)"></div>
+        <div class="cell" onclick="play(this, 5)"></div>
+        <div class="cell" onclick="play(this, 6)"></div>
+        <div class="cell" onclick="play(this, 7)"></div>
+        <div class="cell" onclick="play(this, 8)"></div>
+    </div>
+    <p id="status">Na potezu je: X</p>
+    <button onclick="reset()">Resetuj</button>
+    <script src="/static/script.js"></script>
+</body>
+</html>
