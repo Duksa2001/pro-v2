@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
 }
 
 .menu a {
@@ -16,6 +18,34 @@ body {
 
 .menu a:hover {
     background-color: #45a049;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#difficulty {
+    margin: 20px 0;
+}
+
+#difficulty label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#difficulty select {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#difficulty select:focus {
+    outline: none;
+    border-color: #4CAF50;
 }
 
 #board {
@@ -36,8 +66,53 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .cell:hover {
     background-color: #f9f9f9;
+}
+
+.winning-cell {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#status {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #333;
+}
+
+#status.winner {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#status.draw {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3d8b40;
 }

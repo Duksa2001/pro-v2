@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#game {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#symbols {
+    margin: 20px 0;
+}
+
+.symbol {
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.2s;
+}
+
+.symbol:hover {
+    background-color: #e0e0e0;
+}
+
+.attempt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cell:hover {
+    background-color: #f9f9f9;
+}
+
+.result {
+    display: flex;
+    margin-left: 20px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.yellow {
+    background-color: #ffff00;
+}
+
+#controls {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3d8b40;
+}
+
+#status {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #333;
+}
+
+#status.winner {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+}

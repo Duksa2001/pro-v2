@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Skočko</title>
+    <link rel="stylesheet" href="/static/style_skocko.css">
+</head>
+<body>
+    <h1>Skočko</h1>
+    <div id="game">
+        <div id="symbols">
+            <span class="symbol" onclick="selectSymbol('♠')">♠</span>
+            <span class="symbol" onclick="selectSymbol('♣')">♣</span>
+            <span class="symbol" onclick="selectSymbol('♥')">♥</span>
+            <span class="symbol" onclick="selectSymbol('♦')">♦</span>
+            <span class="symbol" onclick="selectSymbol('★')">★</span>
+            <span class="symbol" onclick="selectSymbol('F')">F</span>
+        </div>
+        <div id="attempts">
+            <div class="attempt" id="attempt-0"></div>
+            <div class="attempt" id="attempt-1"></div>
+            <div class="attempt" id="attempt-2"></div>
+            <div class="attempt" id="attempt-3"></div>
+            <div class="attempt" id="attempt-4"></div>
+            <div class="attempt" id="attempt-5"></div>
+            <div class="attempt" id="attempt-6"></div>
+        </div>
+        <div id="controls">
+            <button onclick="checkAttempt()">Proveri</button>
+            <button onclick="resetGame()">Resetuj</button>
+        </div>
+        <p id="status">Unesi kombinaciju i proveri!</p>
+    </div>
+    <script src="/static/skocko.js"></script>
+</body>
+</html>
